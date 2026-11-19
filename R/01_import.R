@@ -37,5 +37,6 @@ count(ears, RegionName)        # which countries
 #   comparable across 2019/2020.
 # - "R - resistant isolates" and "Total tested isolates" have the
 #   same number of rows (18,679) -> can compute % resistant myself.
-# - Indicator names can have trailing spaces
-#   (e.g. "R - resistant isolates, percentage  ") -> trim before filtering.
+# - The raw file has trailing spaces in some Indicator names, but
+#   read_csv() trims them by default (trim_ws = TRUE), so filtering
+#   on the exact name works. Other import tools may not trim!
