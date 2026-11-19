@@ -27,3 +27,15 @@ glimpse(ears)   # 94,867 rows, 9 columns; NumValue should be <dbl>
 count(ears, Indicator, Unit)   # which measures exist
 count(ears, Time)              # which years
 count(ears, RegionName)        # which countries
+
+# Data checks ------------------------------------------------------
+# Findings (checked 2026-11-19):
+# - Years 2000-2025; ~4,500 rows/year from 2013 (system "complete").
+# - Pathogens were added over time (big jumps in 2005 and 2012),
+#   so long time series aren't possible for all pathogens.
+# - United Kingdom reports until 2019 only -> EU-wide totals not
+#   comparable across 2019/2020.
+# - "R - resistant isolates" and "Total tested isolates" have the
+#   same number of rows (18,679) -> can compute % resistant myself.
+# - Indicator names can have trailing spaces
+#   (e.g. "R - resistant isolates, percentage  ") -> trim before filtering.
