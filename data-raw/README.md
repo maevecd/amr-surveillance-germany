@@ -9,7 +9,7 @@ Files in this folder are kept **exactly as downloaded**. Never edit them by hand
 | Source | ECDC Surveillance Atlas of Infectious Diseases – health topic "Antimicrobial resistance" (EARS-Net data) |
 | URL | https://atlas.ecdc.europa.eu/public/index.aspx |
 | Accessed | 2026-11-19 |
-| Export | Full dataset for the AMR health topic (CSV), downloaded by Maeve Geiger; renamed from `ECDC_surveillance_data_Antimicrobial_resistance.csv` |
+| Export | Full dataset for the AMR health topic (CSV), downloaded by Maeve Kathryn Geiger; renamed from `ECDC_surveillance_data_Antimicrobial_resistance.csv` |
 | Coverage | Years 2000–2025; 31 countries (EU/EEA + UK for earlier years); 8 pathogens, incl. "Data quality" entries |
 | Indicators | R - resistant isolates (N); R - resistant isolates, percentage (%); S - susceptible isolates; I - susceptible, increased exposure; Total tested isolates; Completeness age/gender; Penicillin non-wild-type (S. pneumoniae) |
 | Format | Long format: one row per HealthTopic × Population (pathogen\|antibiotic) × Indicator × Time × Region; value in `NumValue` |
